@@ -8,7 +8,7 @@ Experiencia **no oficial**. Los vídeos pertenecen al canal de Nil Ojeda en YouT
 
 ## Demo en vivo
 
-Despliegue en Vercel: conectar este repositorio como sitio estático (sin build).
+https://geo-video-map-nil-ojeda.vercel.app/
 
 ## Regenerar datos
 
