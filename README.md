@@ -29,6 +29,6 @@ python3 -m http.server 8080
 
 ## Personalización
 
-- `config.json` — marca, colores, textos, `numberEpisodes: true`
+- `config.json` — marca, colores, textos, `numberEpisodes: true` (solo mapa 2D; la vista 3D vive en la [plantilla Geo Video Map](https://github.com/basketouch/geo-video-map))
 - `source/countries.json` — país por video_id de YouTube
 - `data.json` — puntos del mapa (generado)

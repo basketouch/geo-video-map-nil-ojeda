@@ -130,12 +130,6 @@ body {
   line-height: 1.4;
 }
 
-/* Selector2D/3D en la fila de filtros (antes de Vuelta) */
-.gvm-view-mode__select {
-  min-width: 4.25rem;
-  max-width: 100%;
-}
-
 .gvm-header__right {
   display: flex;
   flex-direction: column;
@@ -449,16 +443,10 @@ body {
   gap: 0.35rem;
 }
 
-#map,
-#cesiumContainer {
+#map {
   position: absolute;
   inset: 0;
   z-index: 0;
-}
-
-.gvm-view-mode__select {
-  min-width: 4.25rem;
-  max-width: 100%;
 }
 
 .video-panel {
