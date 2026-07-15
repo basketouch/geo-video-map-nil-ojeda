@@ -448,10 +448,16 @@ body {
   gap: 0.35rem;
 }
 
-#map {
+#map,
+#cesiumContainer {
   position: absolute;
   inset: 0;
   z-index: 0;
+}
+
+.gvm-view-mode__select {
+  min-width: 4.25rem;
+  max-width: 100%;
 }
 
 .video-panel {

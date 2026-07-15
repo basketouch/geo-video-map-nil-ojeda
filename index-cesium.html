@@ -20,12 +20,11 @@
     rel="stylesheet"
   />
   <link
+    href="https://cesium.com/downloads/cesiumjs/releases/1.119/Build/Cesium/Widgets/widgets.css"
     rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""
   />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cesium-page.css" />
 </head>
 <body>
   <header class="gvm-header" id="gvm-header">
@@ -108,7 +107,7 @@
         <span class="map-legend-float__title" id="gvm-legend-title">Leyenda</span>
         <ul class="map-legend-float__list" id="gvm-legend-list"></ul>
       </div>
-      <main id="map" role="application" aria-label="Mapa interactivo"></main>
+      <div id="cesiumContainer" role="application" aria-label="Globo interactivo"></div>
     </div>
 
     <aside class="video-panel" aria-label="Vídeo y ubicación en el mapa">
@@ -168,12 +167,8 @@
     </div>
   </div>
 
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""
-  ></script>
-  <script src="map-engine.js"></script>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.119/Build/Cesium/Cesium.js"></script>
+  <script src="map-engine-cesium.js"></script>
   <script src="view-mode-select.js"></script>
 </body>
 </html>

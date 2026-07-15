@@ -40,6 +40,8 @@
     "label": "@nilojeda · UBICACIÓN",
     "emptyTitle": "Selecciona un punto en el mapa",
     "emptyMeta": "Filtra por país o episodio. Haz clic en un punto para ver el vídeo.",
+    "emptyTitle3d": "Selecciona un punto en el globo",
+    "emptyMeta3d": "Filtra por país o episodio. Haz clic en un punto del globo para ver el vídeo.",
     "placeholderText": "El episodio aparecerá en este reproductor",
     "openExternal": "Abrir en YouTube",
     "seriesPrefix": "LATAM Tour",
@@ -81,9 +83,23 @@
   "map": {
     "center": [-15, -65],
     "zoom": 3,
-    "dataUrl": "data.json"
+    "dataUrl": "data.json",
+    "cesiumCamera": {
+      "lng": -65,
+      "lat": -15,
+      "height": 12000000,
+      "pitch": -0.85
+    }
+  },
+  "views": {
+    "label": "Vista",
+    "mode2d": "2D",
+    "mode3d": "3D",
+    "page2d": "index.html",
+    "page3d": "index-cesium.html"
   },
   "features": {
+    "enable3d": true,
     "showLegend": true,
     "showCredit": true,
     "showExternalCta": true,
