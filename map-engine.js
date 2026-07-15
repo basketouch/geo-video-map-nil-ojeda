@@ -15,12 +15,6 @@
   var placeholderEl = document.getElementById("video-placeholder");
   var placeholderTextEl = document.getElementById("video-placeholder-text");
   var iframeEl = document.getElementById("yt-embed");
-  var panelVideoFrameEl = document.querySelector(".video-panel__frame");
-  var modalVideoFrameEl = document.querySelector(".video-modal__frame");
-  var expandBtnEl = document.getElementById("video-expand-btn");
-  var videoModalEl = document.getElementById("video-modal");
-  var videoModalCloseEl = document.getElementById("video-modal-close");
-  var videoModalBackdropEl = document.getElementById("video-modal-backdrop");
   var openExternalEl = document.getElementById("video-open-external");
   var externalActionsEl = document.getElementById("video-panel-actions");
   var filterSeriesEl = document.getElementById("filter-series");
@@ -358,35 +352,6 @@
     return null;
   }
 
-  function dockIframeInPanel() {
-    if (!iframeEl || !panelVideoFrameEl || !modalVideoFrameEl) return;
-    if (modalVideoFrameEl.contains(iframeEl)) {
-      panelVideoFrameEl.appendChild(iframeEl);
-    }
-  }
-
-  function closeVideoModal() {
-    if (!videoModalEl) return;
-    var wasOpen = !videoModalEl.hidden;
-    videoModalEl.hidden = true;
-    document.body.style.overflow = "";
-    dockIframeInPanel();
-    if (wasOpen) invalidateMapSoon();
-  }
-
-  function openVideoModal() {
-    if (!iframeEl || !modalVideoFrameEl || !panelVideoFrameEl || !videoModalEl) return;
-    var src =
-      iframeEl.getAttribute("src") ||
-      (iframeEl.src && !/^about:blank/i.test(iframeEl.src) ? iframeEl.src : "");
-    if (!src) return;
-    modalVideoFrameEl.appendChild(iframeEl);
-    videoModalEl.hidden = false;
-    document.body.style.overflow = "hidden";
-    invalidateMapSoon();
-    if (videoModalCloseEl) videoModalCloseEl.focus();
-  }
-
   function resetPanel() {
     if (selectedMarker) {
       setMarkerSelected(selectedMarker.m, selectedMarker.c, false);
@@ -400,8 +365,6 @@
     }
     if (placeholderEl) placeholderEl.classList.remove("is-hidden");
     if (externalActionsEl) externalActionsEl.hidden = true;
-    if (expandBtnEl) expandBtnEl.hidden = true;
-    closeVideoModal();
   }
 
   function formatEpisodeTitle(item) {
@@ -430,12 +393,10 @@
       iframeEl.src = "https://www.youtube.com/embed/" + vid + "?rel=0";
       iframeEl.classList.remove("is-hidden");
       if (placeholderEl) placeholderEl.classList.add("is-hidden");
-      if (expandBtnEl) expandBtnEl.hidden = false;
     } else if (iframeEl) {
       iframeEl.removeAttribute("src");
       iframeEl.classList.add("is-hidden");
       if (placeholderEl) placeholderEl.classList.remove("is-hidden");
-      if (expandBtnEl) expandBtnEl.hidden = true;
     }
 
     if (openExternalEl && externalActionsEl) {
@@ -647,12 +608,6 @@
         applyFilters();
       });
     }
-    if (expandBtnEl) expandBtnEl.addEventListener("click", openVideoModal);
-    if (videoModalCloseEl) videoModalCloseEl.addEventListener("click", closeVideoModal);
-    if (videoModalBackdropEl) videoModalBackdropEl.addEventListener("click", closeVideoModal);
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && videoModalEl && !videoModalEl.hidden) closeVideoModal();
-    });
   }
 
   fetchJson(CONFIG_URL)

@@ -113,14 +113,6 @@
       </div>
 
       <div class="video-panel__frame">
-        <button type="button" class="video-expand-btn" id="video-expand-btn" hidden aria-label="Ampliar vídeo" title="Ampliar vídeo">
-          <svg class="video-expand-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <polyline points="15 3 21 3 21 9" />
-            <polyline points="9 21 3 21 3 15" />
-            <line x1="21" y1="3" x2="14" y2="10" />
-            <line x1="3" y1="21" x2="10" y2="14" />
-          </svg>
-        </button>
         <div class="video-panel__placeholder" id="video-placeholder">
           <span class="video-panel__placeholder-icon" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +123,7 @@
         </div>
         <iframe
           id="yt-embed"
-          class="video-panel__iframe video-modal__iframe is-hidden"
+          class="video-panel__iframe is-hidden"
           title="Reproductor de vídeo"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
@@ -150,16 +142,6 @@
         </span>
       </footer>
     </aside>
-  </div>
-
-  <div class="video-modal" id="video-modal" hidden role="dialog" aria-modal="true" aria-label="Reproductor ampliado">
-    <button type="button" class="video-modal__backdrop" id="video-modal-backdrop" tabindex="-1" aria-label="Cerrar"></button>
-    <div class="video-modal__inner">
-      <button type="button" class="video-modal__close" id="video-modal-close" aria-label="Cerrar">
-        <span aria-hidden="true">×</span>
-      </button>
-      <div class="video-modal__frame"></div>
-    </div>
   </div>
 
   <script
