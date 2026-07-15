@@ -1,0 +1,93 @@
+{
+  "site": {
+    "title": "El Mejor País de LATAM",
+    "subtitle": "@nilojeda",
+    "tagline": "Mapa interactivo del LATAM Tour 2026 · Nil Ojeda y YSY A",
+    "description": "Recorre Latinoamérica con Nil Ojeda: filtra por país o episodio y abre cada vídeo en YouTube. Experiencia de comunidad, no oficial.",
+    "canonicalUrl": "https://geo-video-map-nil-ojeda.vercel.app/",
+    "lang": "es",
+    "locale": "es_ES",
+    "themeColor": "#0f1419",
+    "robots": "index, follow"
+  },
+  "brand": {
+    "wordmarkUrl": "https://www.youtube.com/@nilojeda",
+    "externalUrl": "https://www.youtube.com/playlist?list=PLIjkAOS-DpiRXYzGeR3d6cwiAJEwHta_m",
+    "externalLabel": "@nilojeda",
+    "externalType": "youtube",
+    "headerImage": "img/header.svg",
+    "placeholderImage": null
+  },
+  "series": [
+    {
+      "id": "latam",
+      "number": 1,
+      "label": "LATAM Tour 2026",
+      "shortLabel": "LATAM",
+      "color": "#00c853"
+    }
+  ],
+  "filters": {
+    "series": "Serie",
+    "location": "País",
+    "video": "Episodio",
+    "reset": "Limpiar",
+    "allSeries": "Todas",
+    "allLocations": "Todos",
+    "videoPlaceholder": "Episodio…"
+  },
+  "panel": {
+    "label": "@nilojeda · UBICACIÓN",
+    "emptyTitle": "Selecciona un punto en el mapa",
+    "emptyMeta": "Filtra por país o episodio. Haz clic en un punto para ver el vídeo.",
+    "placeholderText": "El episodio aparecerá en este reproductor",
+    "openExternal": "Abrir en YouTube",
+    "seriesPrefix": "LATAM Tour",
+    "episodePrefix": "Ep.",
+    "showEpisodeInPanel": true
+  },
+  "legend": {
+    "title": "Leyenda"
+  },
+  "credit": {
+    "line": "Concepto, desarrollo y diseño",
+    "author": "Jorge Lorenzo",
+    "year": 2026,
+    "authorUrl": "https://insidelife.club",
+    "instagram": {
+      "handle": "@jorgelorenzo.coach",
+      "url": "https://www.instagram.com/jorgelorenzo.coach/"
+    }
+  },
+  "legal": {
+    "footerNote": "Experiencia no oficial · datos de la comunidad",
+    "tooltip": "Los vídeos se reproducen desde YouTube. Titularidad y condiciones según YouTube y el autor del contenido. Este mapa no es oficial ni está vinculado al canal de Nil Ojeda."
+  },
+  "theme": {
+    "background": "#0a0e12",
+    "surface": "#0f1419",
+    "surfaceAlt": "#1a2332",
+    "text": "#f0f2f5",
+    "muted": "#8b939e",
+    "accent": "#00c853",
+    "accentDim": "#00a844",
+    "accentSecondary": "#ffd600",
+    "accentGlow": "rgba(0, 200, 83, 0.35)",
+    "fontDisplay": "Bebas Neue",
+    "fontBody": "DM Sans",
+    "mapTile": "dark",
+    "headerOverlay": 0.88
+  },
+  "map": {
+    "center": [-15, -65],
+    "zoom": 3,
+    "dataUrl": "data.json"
+  },
+  "features": {
+    "showLegend": true,
+    "showCredit": true,
+    "showExternalCta": true,
+    "tooltipPrefix": true,
+    "numberEpisodes": true
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "latam": [
+    {
+      "titulo": "¿Cuál Es el Mejor País de LATAM?",
+      "ubicacion": "Argentina",
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "url": "https://www.youtube.com/watch?v=A7y2tn16swk",
+      "serie": 1,
+      "episodio": 1
+    },
+    {
+      "titulo": "Entendí Por Qué Argentina Es Especial | El Mejor País de LATAM",
+      "ubicacion": "Argentina",
+      "lat": -34.3237,
+      "lng": -58.1016,
+      "url": "https://www.youtube.com/watch?v=erna2teTOXc",
+      "serie": 1,
+      "episodio": 2
+    },
+    {
+      "titulo": "Probé el Restaurante Más FAMOSO de Argentina... ¿Sobrevalorado?",
+      "ubicacion": "Argentina",
+      "lat": -34.0437,
+      "lng": -57.8216,
+      "url": "https://www.youtube.com/watch?v=L07cajqTd1Q",
+      "serie": 1,
+      "episodio": 3
+    },
+    {
+      "titulo": "Nunca Había Visto Policías Así | El Mejor País de LATAM",
+      "ubicacion": "Chile",
+      "lat": -33.4489,
+      "lng": -70.6693,
+      "url": "https://www.youtube.com/watch?v=At7-i7nvsbQ",
+      "serie": 1,
+      "episodio": 4
+    },
+    {
+      "titulo": "24 Horas Con Pablo Chill-E! | El Mejor País de LATAM",
+      "ubicacion": "Chile",
+      "lat": -33.1689,
+      "lng": -70.3893,
+      "url": "https://www.youtube.com/watch?v=6djQs1SbxFM",
+      "serie": 1,
+      "episodio": 5
+    },
+    {
+      "titulo": "24 Horas Con Millonarios en Chile | El Mejor País de LATAM",
+      "ubicacion": "Chile",
+      "lat": -32.8889,
+      "lng": -70.1093,
+      "url": "https://www.youtube.com/watch?v=_k6TF8oYrmk",
+      "serie": 1,
+      "episodio": 6
+    },
+    {
+      "titulo": "Mi Primera Vez en PERÚ 🇵🇪 | El Mejor País de LATAM",
+      "ubicacion": "Perú",
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "url": "https://www.youtube.com/watch?v=Ej9ICaDLxXY",
+      "serie": 1,
+      "episodio": 7
+    },
+    {
+      "titulo": "PERÚ ME TRAUMÓ | El Mejor País de LATAM",
+      "ubicacion": "Perú",
+      "lat": -11.7664,
+      "lng": -76.7628,
+      "url": "https://www.youtube.com/watch?v=o1U4J1wB3qo",
+      "serie": 1,
+      "episodio": 8
+    },
+    {
+      "titulo": "Apareció Cuando Más Lo Necesitaba | El Mejor País de LATAM",
+      "ubicacion": "Perú",
+      "lat": -11.4864,
+      "lng": -76.4828,
+      "url": "https://www.youtube.com/watch?v=CuNsW6HDIr8",
+      "serie": 1,
+      "episodio": 9
+    },
+    {
+      "titulo": "BRASIL: Realmente Es Tan Peligroso? | El Mejor País de LATAM",
+      "ubicacion": "Brasil",
+      "lat": -23.5505,
+      "lng": -46.6333,
+      "url": "https://www.youtube.com/watch?v=fgb1A4F18rE",
+      "serie": 1,
+      "episodio": 10
+    },
+    {
+      "titulo": "DENTRO DE LAS FAVELAS DE RÍO DE JANEIRO 🇧🇷 | El Mejor País de LATAM",
+      "ubicacion": "Brasil",
+      "lat": -23.2705,
+      "lng": -46.3533,
+      "url": "https://www.youtube.com/watch?v=qNwYnu44WrM",
+      "serie": 1,
+      "episodio": 11
+    },
+    {
+      "titulo": "Nos Amenazan en Brasil | El Mejor País de LATAM",
+      "ubicacion": "Brasil",
+      "lat": -22.9905,
+      "lng": -46.0733,
+      "url": "https://www.youtube.com/watch?v=mJfVnL_9q3o",
+      "serie": 1,
+      "episodio": 12
+    },
+    {
+      "titulo": "La Lujosa Vida de Ovy en Colombia | El Mejor País de LATAM",
+      "ubicacion": "Colombia",
+      "lat": 4.711,
+      "lng": -74.0721,
+      "url": "https://www.youtube.com/watch?v=vQnOtJK7Fa4",
+      "serie": 1,
+      "episodio": 13
+    },
+    {
+      "titulo": "Pasé 24 Horas Con WestCOL | El Mejor País de LATAM",
+      "ubicacion": "Colombia",
+      "lat": 4.991,
+      "lng": -73.7921,
+      "url": "https://www.youtube.com/watch?v=lvedZVy0NF4",
+      "serie": 1,
+      "episodio": 14
+    },
+    {
+      "titulo": "JBalvin Nos Trajo Hasta Aquí | El Mejor País de LATAM",
+      "ubicacion": "Colombia",
+      "lat": 5.271,
+      "lng": -73.5121,
+      "url": "https://www.youtube.com/watch?v=V-7nilUqxlA",
+      "serie": 1,
+      "episodio": 15
+    },
+    {
+      "titulo": "Visité el País Más Rico de Latinoamérica! | El Mejor País de LATAM",
+      "ubicacion": "Panamá",
+      "lat": 8.9824,
+      "lng": -79.5199,
+      "url": "https://www.youtube.com/watch?v=k13Sz4cFl5M",
+      "serie": 1,
+      "episodio": 16
+    },
+    {
+      "titulo": "Tour Completo del FALSO Maldivas | El Mejor País de LATAM",
+      "ubicacion": "Panamá",
+      "lat": 9.2624,
+      "lng": -79.2399,
+      "url": "https://www.youtube.com/watch?v=wvvOPtwoIY4",
+      "serie": 1,
+      "episodio": 17
+    },
+    {
+      "titulo": "Se Enfrentó a Nosotros | El Mejor País de LATAM",
+      "ubicacion": "República Dominicana",
+      "lat": 18.4861,
+      "lng": -69.9312,
+      "url": "https://www.youtube.com/watch?v=_snQutRbUSM",
+      "serie": 1,
+      "episodio": 18
+    },
+    {
+      "titulo": "Visité el \"MEJOR\" y el \"PEOR\" Barrio en RD 🇩🇴 | El Mejor País de LATAM",
+      "ubicacion": "República Dominicana",
+      "lat": 18.7661,
+      "lng": -69.6512,
+      "url": "https://www.youtube.com/watch?v=gHxXQJTxt7w",
+      "serie": 1,
+      "episodio": 19
+    },
+    {
+      "titulo": "Así es la Vida de Un Millonario en República Dominicana! 🇩🇴 | El Mejor País de LATAM",
+      "ubicacion": "República Dominicana",
+      "lat": 19.0461,
+      "lng": -69.3712,
+      "url": "https://www.youtube.com/watch?v=c4O1HD-jM_A",
+      "serie": 1,
+      "episodio": 20
+    },
+    {
+      "titulo": "RUBIUS? | El Mejor País de LATAM",
+      "ubicacion": "Puerto Rico",
+      "lat": 18.4655,
+      "lng": -66.1057,
+      "url": "https://www.youtube.com/watch?v=P7xRxVsI9w4",
+      "serie": 1,
+      "episodio": 21
+    },
+    {
+      "titulo": "Visité el País Donde las Armas Son Obligatorias",
+      "ubicacion": "Puerto Rico",
+      "lat": 18.7455,
+      "lng": -65.8257,
+      "url": "https://www.youtube.com/watch?v=WiFAneFptRs",
+      "serie": 1,
+      "episodio": 22
+    },
+    {
+      "titulo": "Visité El Barrio de Bad Bunny | El Mejor País de LATAM",
+      "ubicacion": "Puerto Rico",
+      "lat": 19.0255,
+      "lng": -65.5457,
+      "url": "https://www.youtube.com/watch?v=oaip1RnQ-gk",
+      "serie": 1,
+      "episodio": 23
+    },
+    {
+      "titulo": "No Esperábamos Un Accidente | El Mejor País de LATAM",
+      "ubicacion": "Puerto Rico",
+      "lat": 19.3055,
+      "lng": -65.2657,
+      "url": "https://www.youtube.com/watch?v=OZPG5s_epv0",
+      "serie": 1,
+      "episodio": 24
+    },
+    {
+      "titulo": "No Visité el CECOT Por Esta Razón | El Mejor País de LATAM",
+      "ubicacion": "El Salvador",
+      "lat": 13.6929,
+      "lng": -89.2182,
+      "url": "https://www.youtube.com/watch?v=7HEsNalnuQI",
+      "serie": 1,
+      "episodio": 25
+    },
+    {
+      "titulo": "Así es el LUJO en El Salvador 🇸🇻 | El Mejor País de LATAM",
+      "ubicacion": "El Salvador",
+      "lat": 13.9729,
+      "lng": -88.9382,
+      "url": "https://www.youtube.com/watch?v=7Buwc0bJY9Q",
+      "serie": 1,
+      "episodio": 26
+    },
+    {
+      "titulo": "Visité el Lugar Más Catastrófico de El Salvador 🇸🇻 | El Mejor País de LATAM",
+      "ubicacion": "El Salvador",
+      "lat": 14.2529,
+      "lng": -88.6582,
+      "url": "https://www.youtube.com/watch?v=dV7ZIT_Sx0M",
+      "serie": 1,
+      "episodio": 27
+    },
+    {
+      "titulo": "La Situación en MÉXICO No Es Como Esperaba",
+      "ubicacion": "México",
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "url": "https://www.youtube.com/watch?v=WPF9uWNStVw",
+      "serie": 1,
+      "episodio": 28
+    },
+    {
+      "titulo": "México No Es Como Lo Imaginábamos 🇲🇽 | El Mejor País de LATAM",
+      "ubicacion": "México",
+      "lat": 19.7126,
+      "lng": -98.8532,
+      "url": "https://www.youtube.com/watch?v=Do36ve46rDE",
+      "serie": 1,
+      "episodio": 29
+    },
+    {
+      "titulo": "Así Vivimos Un Sismo de 5.6 en México | El Mejor País de LATAM",
+      "ubicacion": "México",
+      "lat": 19.9926,
+      "lng": -98.5732,
+      "url": "https://www.youtube.com/watch?v=8Ok1uXfOPeM",
+      "serie": 1,
+      "episodio": 30
+    }
+  ]
+}

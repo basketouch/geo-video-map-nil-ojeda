@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Geo Video Map</title>
+  <meta name="description" content="Mapa interactivo de vídeos geolocalizados." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#12151c" />
+  <link rel="canonical" href="./" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Geo Video Map" />
+  <meta property="og:description" content="Mapa interactivo de vídeos geolocalizados." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="gvm-header" id="gvm-header">
+    <div class="gvm-header__decor" id="gvm-header-decor" aria-hidden="true" hidden>
+      <img class="gvm-header__decor-img" id="gvm-header-img" src="" alt="" decoding="async" />
+    </div>
+    <div class="gvm-header__top">
+      <div class="gvm-header__left">
+        <a class="gvm-wordmark" id="gvm-wordmark" href="#" target="_blank" rel="noopener noreferrer">
+          <span class="gvm-wordmark__main" id="gvm-wordmark-main">Geo Video Map</span>
+          <span class="gvm-wordmark__sub" id="gvm-wordmark-sub"></span>
+        </a>
+        <p class="gvm-tagline" id="gvm-tagline"></p>
+      </div>
+      <div class="gvm-header__right" id="gvm-header-right">
+        <a class="gvm-cta gvm-cta--youtube" id="gvm-external-cta" href="#" target="_blank" rel="noopener noreferrer">
+          <svg class="gvm-cta__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+          <span class="gvm-cta__label">
+            <span class="gvm-cta__handle" id="gvm-cta-handle">@canal</span>
+            <span class="gvm-cta__yt-mark" aria-hidden="true">
+              <span class="gvm-cta__yt-you">You</span><span class="gvm-cta__yt-tube">Tube</span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="gvm-header__filters-block">
+      <div class="map-filters map-filters--header" role="search" aria-label="Filtrar puntos en el mapa">
+        <div class="map-filters__row">
+          <label class="map-filters__field">
+            <span class="map-filters__label" id="label-filter-series">Serie</span>
+            <select id="filter-series" class="map-filters__select"></select>
+          </label>
+          <label class="map-filters__field map-filters__field--grow">
+            <span class="map-filters__label" id="label-filter-location">Ubicación</span>
+            <select id="filter-location" class="map-filters__select">
+              <option value="">Todas</option>
+            </select>
+          </label>
+          <label class="map-filters__field map-filters__field--grow">
+            <span class="map-filters__label" id="label-filter-video">Episodio</span>
+            <select id="filter-video" class="map-filters__select" aria-label="Elegir un episodio">
+              <option value="">Episodio…</option>
+            </select>
+          </label>
+          <button type="button" class="map-filters__btn" id="filter-reset">Limpiar</button>
+        </div>
+      </div>
+      <p class="gvm-header-credit" id="gvm-credit" hidden>
+        <span class="gvm-header-credit__inner">
+          <span class="gvm-header-credit__ip" id="gvm-credit-ip">
+            <span id="gvm-credit-line">Concepto, desarrollo y diseño:</span>
+            <a id="gvm-credit-author" href="#" target="_blank" rel="noopener noreferrer">Jorge Lorenzo</a>
+            <span id="gvm-credit-year"> © 2026</span>
+          </span>
+          <span class="gvm-header-credit__sep" aria-hidden="true">·</span>
+          <a class="gvm-header-credit__ig" id="gvm-credit-ig" href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="gvm-header-credit__ig-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+            <span id="gvm-credit-ig-handle">@instagram</span>
+          </a>
+        </span>
+      </p>
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <div class="map-column">
+      <div class="map-legend-float" id="gvm-legend" aria-hidden="true">
+        <span class="map-legend-float__title" id="gvm-legend-title">Leyenda</span>
+        <ul class="map-legend-float__list" id="gvm-legend-list"></ul>
+      </div>
+      <main id="map" role="application" aria-label="Mapa interactivo"></main>
+    </div>
+
+    <aside class="video-panel" aria-label="Vídeo y ubicación en el mapa">
+      <div class="video-panel__top">
+        <span class="video-panel__label" id="video-panel-label">UBICACIÓN</span>
+        <h2 class="video-panel__title" id="video-panel-title">Selecciona un punto en el mapa</h2>
+        <p class="video-panel__meta" id="video-panel-meta" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="video-panel__frame">
+        <button type="button" class="video-expand-btn" id="video-expand-btn" hidden aria-label="Ampliar vídeo" title="Ampliar vídeo">
+          <svg class="video-expand-btn__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 3 21 3 21 9" />
+            <polyline points="9 21 3 21 3 15" />
+            <line x1="21" y1="3" x2="14" y2="10" />
+            <line x1="3" y1="21" x2="10" y2="14" />
+          </svg>
+        </button>
+        <div class="video-panel__placeholder" id="video-placeholder">
+          <span class="video-panel__placeholder-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 5v14l11-7L8 5z" />
+            </svg>
+          </span>
+          <p id="video-placeholder-text">Tu episodio aparecerá aquí</p>
+        </div>
+        <iframe
+          id="yt-embed"
+          class="video-panel__iframe video-modal__iframe is-hidden"
+          title="Reproductor de vídeo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="video-panel__actions" id="video-panel-actions" hidden>
+        <a class="gvm-btn gvm-btn--primary" id="video-open-external" href="#" target="_blank" rel="noopener noreferrer">Abrir vídeo</a>
+      </div>
+
+      <footer class="video-panel__footer">
+        <span class="gvm-footer-note-wrap">
+          <span class="gvm-footer-note" id="gvm-footer-note"></span>
+          <button type="button" class="gvm-info-tip" id="gvm-info-tip" aria-label="Información" title="" data-tooltip="">i</button>
+        </span>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="video-modal" id="video-modal" hidden role="dialog" aria-modal="true" aria-label="Reproductor ampliado">
+    <button type="button" class="video-modal__backdrop" id="video-modal-backdrop" tabindex="-1" aria-label="Cerrar"></button>
+    <div class="video-modal__inner">
+      <button type="button" class="video-modal__close" id="video-modal-close" aria-label="Cerrar">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="video-modal__frame"></div>
+    </div>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="map-engine.js"></script>
+</body>
+</html>

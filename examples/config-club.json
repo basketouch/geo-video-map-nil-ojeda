@@ -1,0 +1,78 @@
+{
+  "site": {
+    "title": "Temporada 24/25",
+    "subtitle": "@MiClub",
+    "tagline": "Mapa de partidos y desplazamientos",
+    "description": "Recorre la temporada en un mapa interactivo.",
+    "canonicalUrl": "https://ejemplo.com/mapa",
+    "lang": "es",
+    "locale": "es_ES",
+    "themeColor": "#0d1b2a",
+    "robots": "noindex, nofollow"
+  },
+  "brand": {
+    "wordmarkUrl": "https://ejemplo.com",
+    "externalUrl": "https://www.youtube.com/@MiClub",
+    "externalLabel": "@MiClub",
+    "externalType": "youtube",
+    "headerImage": "img/header.svg",
+    "placeholderImage": null
+  },
+  "series": [
+    { "id": "liga", "number": 1, "label": "Liga regular", "color": "#3a86ff" },
+    { "id": "playoffs", "number": 2, "label": "Playoffs", "color": "#ff006e" }
+  ],
+  "filters": {
+    "series": "Fase",
+    "location": "Ciudad",
+    "video": "Partido",
+    "reset": "Limpiar",
+    "allSeries": "Todas",
+    "allLocations": "Todas",
+    "videoPlaceholder": "Partido…"
+  },
+  "panel": {
+    "label": "@MiClub · PARTIDO",
+    "emptyTitle": "Selecciona un partido en el mapa",
+    "emptyMeta": "Filtra por fase o ciudad.",
+    "placeholderText": "El resumen aparecerá aquí",
+    "openExternal": "Ver en YouTube",
+    "seriesPrefix": "Fase"
+  },
+  "theme": {
+    "background": "#0d1b2a",
+    "surface": "#1b263b",
+    "surfaceAlt": "#243554",
+    "text": "#e0e1dd",
+    "muted": "#9aa5b1",
+    "accent": "#3a86ff",
+    "accentDim": "#2667cc",
+    "accentSecondary": "#ffbe0b",
+    "accentGlow": "rgba(58, 134, 255, 0.35)",
+    "fontDisplay": "Bebas Neue",
+    "fontBody": "DM Sans",
+    "mapTile": "dark",
+    "headerOverlay": 0.9
+  },
+  "map": {
+    "center": [40, -3],
+    "zoom": 5,
+    "dataUrl": "data.json"
+  },
+  "features": {
+    "showLegend": true,
+    "showCredit": true,
+    "showExternalCta": true,
+    "tooltipPrefix": true
+  },
+  "credit": {
+    "line": "Concepto, desarrollo y diseño",
+    "author": "Jorge Lorenzo",
+    "year": 2026,
+    "authorUrl": "https://insidelife.club"
+  },
+  "legal": {
+    "footerNote": "Mapa de demostración",
+    "tooltip": "Vídeos embebidos desde YouTube."
+  }
+}

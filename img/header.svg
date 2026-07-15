@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Mapa Latinoamérica">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#051018"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M380,120 Q520,80 680,140 T980,100 T1180,180 T1320,260 L1280,820 Q900,780 620,800 T280,760 L320,200 Z" fill="#1a3d2e" opacity="0.45"/>
+  <path d="M420,200 Q600,160 780,220 T1100,280 T1250,420" fill="none" stroke="#00c853" stroke-width="3" stroke-dasharray="12 8" opacity="0.75"/>
+  <circle cx="520" cy="280" r="10" fill="#00c853"/>
+  <circle cx="720" cy="320" r="10" fill="#ffd600"/>
+  <circle cx="920" cy="400" r="10" fill="#00c853"/>
+  <circle cx="1080" cy="480" r="10" fill="#ffd600"/>
+  <text x="800" y="130" text-anchor="middle" fill="#f0f2f5" font-family="Georgia, serif" font-size="38" letter-spacing="6" opacity="0.3">EL MEJOR PAÍS DE LATAM</text>
+</svg>
