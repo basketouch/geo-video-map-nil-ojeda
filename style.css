@@ -719,6 +719,23 @@ body {
   font-family: inherit;
 }
 
+.leaflet-control-attribution {
+  font-size: 9px;
+  line-height: 1.35;
+  opacity: 0.55;
+  background: rgba(10, 14, 18, 0.75) !important;
+  color: #6b7280 !important;
+  border-radius: 4px 0 0 0;
+}
+
+.leaflet-control-attribution a {
+  color: #8b939e !important;
+}
+
+.leaflet-control-attribution a:hover {
+  color: var(--text) !important;
+}
+
 .leaflet-tooltip.gvm-map-tooltip {
   background: var(--surface-2);
   color: var(--text);

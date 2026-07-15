@@ -288,6 +288,8 @@
       maxZoom: 20,
     }).addTo(map);
 
+    map.attributionControl.setPrefix("");
+
     window.addEventListener("resize", invalidateMapSoon);
     var mapColumnEl = mapEl.parentElement;
     if (mapColumnEl && typeof ResizeObserver !== "undefined") {
