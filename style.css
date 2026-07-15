@@ -11,7 +11,8 @@
   --accent-glow: rgba(232, 93, 4, 0.35);
   --header-overlay: 0.85;
   --header-h: auto;
-  --video-frame-max: min(85vh, 1200px);
+  --video-frame-max: min(102vh, 1440px);
+  --video-panel-width: min(624px, 58vw);
   font-family: "DM Sans", system-ui, -apple-system, sans-serif;
 }
 
@@ -461,7 +462,7 @@ body {
 }
 
 .video-panel {
-  width: min(520px, 48vw);
+  width: var(--video-panel-width);
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -641,7 +642,7 @@ body {
 .video-modal__inner {
   position: relative;
   z-index: 1;
-  width: min(96vw, 1200px);
+  width: min(96vw, 1440px);
   max-width: 100%;
   background: #000;
   border-radius: 10px;
@@ -684,7 +685,7 @@ body {
   position: relative;
   width: 100%;
   /* Altura explícita: evita contenedor 0×0 cuando aspect-ratio + max-height falla en flex */
-  height: min(calc(min(96vw, 1200px) * 9 / 16), 85vh);
+  height: min(calc(min(96vw, 1440px) * 9 / 16), 102vh);
   min-height: 200px;
   background: #000;
 }
@@ -904,7 +905,7 @@ body {
   }
 
   .video-panel__frame {
-    max-height: min(48vh, var(--video-frame-max));
+    max-height: min(58vh, var(--video-frame-max));
     aspect-ratio: 16 / 9;
   }
 
@@ -947,7 +948,7 @@ body {
   }
 
   .video-panel__frame {
-    max-height: min(36vh, 240px);
+    max-height: min(43vh, 288px);
   }
 }
 
